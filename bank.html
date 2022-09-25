@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Baper Bank</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-6xl capitalize text-center mt-10">
+        Let's make
+        <span class="font-semibold text-fuchsia-400">some money</span>
+      </h1>
+    </header>
+
+    <main>
+      <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4 mx-auto w-10/12 text-fuchsia-100">
+          <div class="bg-fuchsia-500 p-10 text-center rounded shadow-2xl">
+            <h4 class="text-2xl font-semibold">Deposit</h4>
+            <h2 class="text-3xl font-semibold">
+              $ <span id="totalDeposit">00</span>
+            </h2>
+          </div>
+          <div class="bg-fuchsia-700 p-10 text-center rounded shadow-2xl">
+            <h4 class="text-2xl font-semibold">Withdraw</h4>
+            <h2 class="text-3xl font-semibold">
+              $ <span id="total-withdraw">00</span>
+            </h2>
+          </div>
+          <div class="bg-fuchsia-900 p-10 text-center rounded shadow-2xl">
+            <h4 class="text-2xl font-semibold">Balance</h4>
+            <h2 class="text-3xl font-semibold">
+              $ <span id="totalBalance">1240</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <div class="grid grid-cols-2 gap-4 mx-auto w-10/12 text-fuchsia-100">
+          <div class="bg-fuchsia-100 p-10 text-center rounded shadow-2xl">
+            <h1 class="text-3xl text-fuchsia-900 font-semibold">
+              Please Deposit
+            </h1>
+            <input
+              type="text"
+              id="deposit-field"
+              class="w-10/12 p-2 my-4 block mx-auto text-fuchsia-900 font-semibold"
+              placeholder="Enter amount"
+            />
+            <button
+              class="bg-fuchsia-900 text-fuchsia-100 block mx-auto px-8 py-2 rounded font-semibold"
+              id="deposit-btn"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="bg-fuchsia-300 p-10 text-center rounded shadow-2xl">
+            <h1 class="text-3xl text-fuchsia-900 font-semibold">
+              Please Withdraw
+            </h1>
+            <input
+              type="text"
+              id="withdraw-field"
+              class="w-10/12 p-2 my-4 block mx-auto text-fuchsia-900 font-semibold"
+              placeholder="Enter amount"
+            />
+            <button
+              class="bg-fuchsia-900 text-fuchsia-100 block mx-auto px-8 py-2 rounded font-semibold"
+              id="withdraw-btn"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/bank.js"></script>
+  </body>
+</html>

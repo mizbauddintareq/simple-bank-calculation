@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Baper Bank</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-6xl capitalize text-center mt-10">
+        welcome to
+        <span class="font-semibold text-fuchsia-400">baper bank</span>
+      </h1>
+    </header>
+
+    <main>
+      <section class="bg-fuchsia-900 w-6/12 mx-auto mt-12 rounded shadow-2xl">
+        <h3 class="text-3xl text-fuchsia-100 font-semibold p-5">
+          Please login
+        </h3>
+        <div class="w-11/12 p-5">
+          <input
+            class="w-9/12 p-2 block mb-2"
+            type="text"
+            placeholder="please enter your email"
+            id="emailField"
+          />
+
+          <input
+            class="w-9/12 p-2 block mb-2"
+            type="password"
+            placeholder="please enter your password"
+            id="passField"
+          />
+
+          <button
+            id="loginBtn"
+            class="px-8 py-2 bg-fuchsia-100 mx-auto font-semibold text-fuchsia-900 rounded"
+          >
+            Login
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
